@@ -4,65 +4,167 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
+
+    <link rel="stylesheet" href="./public/css/pricing.css" />
   </head>
 
   <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
+    <header>
+      <div class="navbar-wrapper">
+        <div class="navbar-nav">
+          <img
+            src="./public/img/shared/desktop/logo.svg"
+            alt=""
+            class="navbar-brand"
+          />
+          <nav class="navbar-primary">
+            <ul>
+              <li><a class="nav-item" href="./pricing.html">Pricing</a></li>
+              <li><a class="nav-item" href="./about.html">About</a></li>
+              <li><a class="nav-item" href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-toggle">
+          <button style="display: none">
+            <img src="./public/img/shared/mobile/menu.svg" alt="" />
+          </button>
+        </div>
 
-    Pricing
+        <button class="btn btn-primary">Schedule a Demo</button>
+      </div>
+    </header>
+    <main>
+      <section class="pricing">
+        <h1 class="heading-xxl">Pricing</h1>
 
-    Free Plan
-    Build and test using our core set of products with up to 100 API requests
-    $0.00
-    
-    Transactions
-    Auth
-    Identity
-    Investments
-    Assets
-    Liabilities
-    Income
-    Request Access
+        <div class="pricing--columns">
+          <div class="column">
+            <div class="column-top">
+              <h3 class="heading-m">Free Plan</h3>
+              <p class="text-body">
+                Build and test using our core set of products with up to 100 API
+                requests
+              </p>
 
-    Basic Plan
-    Launch your project with unlimited requests and no contractual minimums
-    $249.00
-    
-    Transactions
-    Auth
-    Identity
-    Investments
-    Assets
-    Liabilities
-    Income
-    Request Access
+              <p class="heading-xxl">$0.00</p>
+            </div>
+            <ul>
+              <li class="plan-active">Transactions</li>
+              <li class="plan-active">Auth</li>
+              <li class="plan-active">Identity</li>
+              <li class="plan-disabled">Investment</li>
+              <li class="plan-disabled">Assets</li>
+              <li class="plan-disabled">Liabilities</li>
+              <li class="plan-disabled">Income</li>
+            </ul>
+            <div class="column-bottom">
+              <button class="btn btn-thrid">Request Access</button>
+            </div>
+          </div>
 
-    Premium Plan
-    Get tailored solutions, volume pricing, and dedicated support for your team
-    $499.00
-    
-    Transactions
-    Auth
-    Identity
-    Investments
-    Assets
-    Liabilities
-    Income
-    Request Access
+          <div class="column">
+            <div class="column-top">
+              <h3 class="heading-m">Basic Plan</h3>
+              <p class="text-body">
+                Launch your project with unlimited requests and no contractual
+                minimums
+              </p>
 
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
+              <p class="heading-xxl">$249.00</p>
+            </div>
+            <ul>
+              <li class="plan-active">Transactions</li>
+              <li class="plan-active">Auth</li>
+              <li class="plan-active">Identity</li>
+              <li class="plan-active">Investment</li>
+              <li class="plan-active">Assets</li>
+              <li class="plan-disabled">Liabilities</li>
+              <li class="plan-disabled">Income</li>
+            </ul>
+            <div class="column-bottom">
+              <button class="btn btn-thrid">Request Access</button>
+            </div>
+          </div>
 
-    Pricing
-    About
-    Contact
+          <div class="column">
+            <div class="column-top">
+              <h3 class="heading-m">Premium Plan</h3>
+              <p class="text-body">
+                Get tailored solutions, volume pricing, and dedicated support
+                for your team
+              </p>
+
+              <p class="heading-xxl">$499.00</p>
+            </div>
+            <ul>
+              <li class="plan-active">Transactions</li>
+              <li class="plan-active">Auth</li>
+              <li class="plan-active">Identity</li>
+              <li class="plan-active">Investment</li>
+              <li class="plan-active">Assets</li>
+              <li class="plan-active">Liabilities</li>
+              <li class="plan-active">Income</li>
+            </ul>
+            <div class="column-bottom">
+              <button class="btn btn-thrid">Request Access</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ready--start">
+        <h2 class="heading-l">Ready to start?</h2>
+
+        <form class="search--form" action="">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="search--input"
+            placeholder="Enter email address"
+          />
+          <button class="btn btn-primary" type="submit">Schedule a Demo</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="nav-logo">
+          <img
+            src="./public/img/shared/desktop/logo.svg"
+            alt=""
+            class="footer-brand"
+          />
+          <nav class="footer-navbar">
+            <ul>
+              <li><a class="navbar-item" href="./pricing.html">Pricing</a></li>
+              <li><a class="navbar-item" href="./about.html">About</a></li>
+              <li><a class="navbar-item" href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="social">
+          <a href="#"
+            ><img src="./public/img/shared/desktop/facebook.svg" alt=""
+          /></a>
+          <a href="#"
+            ><img src="./public/img/shared/desktop/twitter.svg" alt=""
+          /></a>
+          <a href="#"
+            ><img src="./public/img/shared/desktop/linkedin.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
-
 </html>

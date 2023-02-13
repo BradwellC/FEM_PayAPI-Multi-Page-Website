@@ -1,0 +1,23 @@
+{
+  "name": "fem-payapi-multi-page-website",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challange - PayAPI Multi Page Website",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded public/scss:public/css",
+    "sass-prod": "sass --no-source-map --style=compressed public/scss:public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BradwellC/FEM_PayAPI-Multi-Page-Website.git"
+  },
+  "author": "Chris Bradwell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BradwellC/FEM_PayAPI-Multi-Page-Website/issues"
+  },
+  "homepage": "https://github.com/BradwellC/FEM_PayAPI-Multi-Page-Website#readme",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  }
+}

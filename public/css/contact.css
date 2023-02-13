@@ -248,7 +248,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1110px;
+  width: min(1110px, 100% - 3rem);
   height: 48px;
   margin-inline: auto;
 }
@@ -257,8 +257,9 @@ header {
   content: url("../img/shared/desktop/bg-pattern-circle.svg");
   position: absolute;
   z-index: -10;
-  top: -25%;
+  top: -70%;
   right: -10%;
+  filter: brightness(0) saturate(100%) invert(49%) sepia(10%) saturate(876%) hue-rotate(165deg) brightness(99%) contrast(86%);
 }
 
 .navbar-nav {
@@ -363,193 +364,54 @@ footer {
   padding-block: 4rem 6rem;
 }
 
-.intro {
-  width: 1110px;
-  /* height: 500px; */
-  margin-inline: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.intro--content {
-  width: 546px;
-  height: 345px;
-}
-
-.intro--content h1 {
-  padding-bottom: 40px;
-}
-
-.intro--content p {
-  font-size: 15px;
-  font-family: "Public Sans", sans-serif;
-  color: #6c8294;
-  padding-left: 30px;
-  padding-top: 10px;
-}
-
-.intro--content p a {
-  font-weight: 700;
-  text-decoration: none;
-  color: #6c8294;
-}
-
-.intro--form {
-  display: flex;
-  flex-direction: row;
-  width: 445px;
-  height: 48px;
-  background-color: #fbfcfe;
-  border-radius: 35px;
-  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-}
-
-.form-home {
-  width: 272px;
-  height: 48px;
-  border: none;
-  outline: none;
-  border-top-left-radius: 35px;
-  border-bottom-left-radius: 35px;
-  padding-left: 2rem;
-  font-size: 15px;
-  font-family: "Public Sans", sans-serif;
-  color: #36536b;
-  font-weight: 700;
-}
-
-.form-home::placeholder,
-.form-home:focus {
-  font-size: 15px;
-  color: #36536b;
-  font-weight: 700;
-  font-family: "Public Sans", sans-serif;
-}
-
-.work--with {
-  height: 472px;
-  background-color: #1b262f;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.work--container {
+.main-section {
   width: min(1110px, 100% - 3rem);
-  height: 272px;
   margin-inline: auto;
+  padding-block: 6rem;
+  height: 700px;
+}
+
+.main-section .heading-xl {
+  width: 730px;
+}
+
+/*  */
+.form--logo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  width: min(1110px, 100% - 3rem);
 }
 
-.work--content {
+.contact-form {
+  display: flex;
+  flex-direction: column;
   width: 445px;
-  height: 272px;
-  color: #fbfcfe;
 }
 
-.work--content .heading-l {
-  color: #fbfcfe;
+.contact-form input,
+.contact-form textarea {
+  background-color: transparent;
+  border: none;
+  width: 445px;
+  height: 42px;
 }
 
-.work--content .text-body {
-  padding: 20px 0 39px;
-  color: #fbfcfe;
+.logos {
+  width: 541px;
 }
 
-.work--logos {
+.logos .heading-s {
+  width: 445px;
+}
+
+.logo--brands {
   display: flex;
   flex-wrap: wrap;
   gap: 39px;
   align-items: center;
   justify-content: space-around;
-  width: 536px;
-  height: 103px;
-  filter: brightness(0) saturate(100%) invert(94%) sepia(13%) saturate(75%) hue-rotate(161deg) brightness(104%) contrast(99%);
 }
 
-/* Work Styling END */
-.implement {
-  padding-block: 5rem;
-}
-
-.implement--container {
-  width: min(1110px, 100% - 3rem);
-  margin-inline: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.implement--content {
-  width: 445px;
-  height: 164px;
-}
-
-.implement--content h3 {
-  padding-bottom: 24px;
-}
-
-/* Implement Styles END */
-.simple--ui {
-  /* height: 780px; */
-}
-
-.ui--container {
-  width: min(1110px, 100% - 3rem);
-  margin-inline: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  position: relative;
-}
-
-.ui--content {
-  width: 445px;
-}
-
-.ui--container::before {
-  content: url("../img/shared/desktop/bg-pattern-circle.svg");
-  position: absolute;
-  z-index: -10;
-  top: -17.5%;
-  right: -45%;
-}
-
-.three-columns {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  width: min(1110px, 100% - 3rem);
-  margin-inline: auto;
-  column-gap: 30px;
-  padding-block: 5rem;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 350px;
-}
-
-.column img {
-  width: 106px;
-  height: 106px;
-  margin-bottom: 1.3rem;
-}
-
-.column p {
-  padding-top: 1rem;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=contact.css.map */

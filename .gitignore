@@ -17,3 +17,9 @@ node_modules/
 
 public/scss/
 README-template.md
+public/css/about.css.map
+public/css/main.css.map
+public/css/contact.css.map
+public/css/pricing.css.map
+
+public/css/old/
